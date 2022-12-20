@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">StudentBeansAndroidJuniorApplication</string>
+    <string name="helper_first_line">"+++++++++++++++++++++++++++++++++++++++++++++++++++INIT++++++++++++++++++++++++++++++++++++++++++++++++++++++"</string>
 </resources>
