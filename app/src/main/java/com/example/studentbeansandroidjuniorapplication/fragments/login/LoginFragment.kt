@@ -30,6 +30,7 @@ class LoginFragment : Fragment() {
     ): View {
         _binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
         _binding?.apply {
+            lifecycleOwner = viewLifecycleOwner
             varLoginVm = this@LoginFragment.loginVm
         }
 

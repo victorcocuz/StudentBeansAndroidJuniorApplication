@@ -2,6 +2,7 @@ package com.example.studentbeansandroidjuniorapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
@@ -10,6 +11,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import com.example.studentbeansandroidjuniorapplication.databinding.ActivityMainBinding
+import com.example.studentbeansandroidjuniorapplication.utils.removeFocusAndHideKeyboard
 import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
@@ -42,5 +44,10 @@ class MainActivity : AppCompatActivity() {
             navController,
             appBarConfiguration
         ) || super.onSupportNavigateUp()
+    }
+
+    override fun dispatchTouchEvent(event: MotionEvent): Boolean { // Remove focus from edit text on outside click
+        currentFocus?.removeFocusAndHideKeyboard(this, event)
+        return super.dispatchTouchEvent(event)
     }
 }
