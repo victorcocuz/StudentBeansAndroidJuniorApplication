@@ -2,6 +2,7 @@
 <resources>
     <!-- Main-->
     <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
 
     <!-- Margins -->
     <dimen name="margin_xxxsmall">4dp</dimen>
@@ -10,7 +11,11 @@
     <dimen name="margin_small">16dp</dimen>
 
     <!-- Paddings-->
+    <dimen name="padding_button_small">4dp</dimen>
+    <dimen name="padding_shape">8dp</dimen>
+    <dimen name="padding_ball">8dp</dimen>
     <dimen name="padding_button">16dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
 
     <!-- Text-->
     <dimen name="text_regular">14sp</dimen>
@@ -21,5 +26,8 @@
 
     <!-- Other-->
     <dimen name="stroke_single">1dp</dimen>
+    <dimen name="stroke_double">2dp</dimen>
+    <dimen name="corner_radius">4dp</dimen>
+    <dimen name="border_offset">-3dp</dimen>
 
 </resources>

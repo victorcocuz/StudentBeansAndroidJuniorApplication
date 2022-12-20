@@ -5,6 +5,7 @@
     tools:context=".fragments.login.LoginFragment">
 
     <data>
+
         <variable
             name="varLoginVm"
             type="com.example.studentbeansandroidjuniorapplication.fragments.login.LoginViewModel" />
@@ -15,15 +16,55 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/f_login_et_email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:nextFocusForward="@id/f_login_et_password_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/f_login_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/f_login_email_hint"
+                android:inputType="textEmailAddress"
+                android:onTextChanged="@{varLoginVm.onEmailChanged}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/f_login_et_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:layout_marginBottom="@dimen/margin_xxsmall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/f_login_et_email_layout"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/f_login_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/f_login_email_password_hint"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:onTextChanged="@{varLoginVm.onPasswordChanged}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <TextView
             android:id="@+id/f_login_btn_login"
             style="@style/ButtonStandard"
-            android:text="@string/f_login_login_btn"
             android:onClick="@{() -> varLoginVm.validateLogin()}"
+            android:text="@string/f_login_login_btn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/f_login_et_password_layout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

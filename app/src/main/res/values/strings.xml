@@ -8,5 +8,8 @@
 
     <!--Fragment Login-->
     <string name="f_login_login_btn">login</string>
+    <string name="f_login_email_hint">E-mail</string>
+    <string name="f_login_email_password_hint">Password</string>
+    <string name="f_login_toast_user_or_pass_empty">Please fill in details for both user and password to login</string>
 
 </resources>
