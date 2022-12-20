@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/LoginFragment">
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.studentbeansandroidjuniorapplication.fragments.login.LoginFragment"
+        android:label="@string/f_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/nav_to_PhotosFragment"
+            app:destination="@id/PhotosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PhotosFragment"
+        android:name="com.example.studentbeansandroidjuniorapplication.fragments.photos.PhotosFragment"
+        tools:layout="@layout/fragment_photos"
+        android:label="@string/f_photos" />
+</navigation>

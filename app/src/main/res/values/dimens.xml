@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main-->
+    <dimen name="toolbar_height">56dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_xxxsmall">4dp</dimen>
+    <dimen name="margin_xxsmall">8dp</dimen>
+    <dimen name="margin_xsmall">12dp</dimen>
+    <dimen name="margin_small">16dp</dimen>
+
+    <!-- Paddings-->
+    <dimen name="padding_button">16dp</dimen>
+
+    <!-- Text-->
+    <dimen name="text_regular">14sp</dimen>
+
+    <!-- Elevations -->
+    <dimen name="toolbar_elevation">0dp</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+
+    <!-- Other-->
+    <dimen name="stroke_single">1dp</dimen>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Toolbar -->
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/toolbar_height</item>
+        <item name="android:minHeight">@dimen/toolbar_height</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:elevation">@dimen/toolbar_elevation</item>
+    </style>
+
+    <style name="TextStandard" parent = "android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ButtonStandard" parent="TextStandard">
+        <item name="android:textSize">@dimen/text_regular</item>
+        <item name="android:background">@drawable/btn_narrow_ripple</item>
+        <item name="android:paddingStart">@dimen/padding_button</item>
+        <item name="android:paddingEnd">@dimen/padding_button</item>
+        <item name="android:layout_marginStart">@dimen/margin_xxxsmall</item>
+        <item name="android:layout_marginEnd">@dimen/margin_xxxsmall</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:elevation">@dimen/button_elevation</item>
+    </style>
+</resources>

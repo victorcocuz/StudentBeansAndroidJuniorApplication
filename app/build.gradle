@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -41,6 +42,7 @@ dependencies {
     // Init
     implementation "androidx.core:core-ktx:$version_core"
     implementation "androidx.appcompat:appcompat:$version_appcompat"
+    implementation "androidx.legacy:legacy-support-v4:$version_legacy_support"
     implementation "com.google.android.material:material:$vasrion_material"
     implementation "androidx.constraintlayout:constraintlayout:$version_constraintlayout"
 

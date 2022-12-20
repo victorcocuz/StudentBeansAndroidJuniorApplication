@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">StudentBeansAndroidJuniorApplication</string>
     <string name="helper_first_line">"+++++++++++++++++++++++++++++++++++++++++++++++++++INIT++++++++++++++++++++++++++++++++++++++++++++++++++++++"</string>
+
+    <!--Fragments-->
+    <string name="f_login">Welcome back</string>
+    <string name="f_photos">Photos</string>
+
+    <!--Fragment Login-->
+    <string name="f_login_login_btn">login</string>
+
 </resources>
