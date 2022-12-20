@@ -1,6 +1,6 @@
 package com.example.studentbeansandroidjuniorapplication.utils
 
-enum class LoginAction {
+enum class StudentBeansAction {
     TOAST_EMPTY,
     NAVIGATE_PHOTOS
 }

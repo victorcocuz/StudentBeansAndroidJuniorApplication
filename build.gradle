@@ -20,6 +20,9 @@ buildscript {
         version_moshi = '1.13.0'
         version_glide = '4.14.2'
 
+        // Room
+        version_room = '2.4.3'
+
         // Other
         version_timber = '5.0.1'
 

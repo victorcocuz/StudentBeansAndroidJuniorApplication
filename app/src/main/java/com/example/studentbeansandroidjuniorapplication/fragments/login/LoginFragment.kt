@@ -7,16 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.MutableLiveData
 import com.example.studentbeansandroidjuniorapplication.R
 import com.example.studentbeansandroidjuniorapplication.databinding.FragmentLoginBinding
-import com.example.studentbeansandroidjuniorapplication.domain.DomainUserLogin
 import com.example.studentbeansandroidjuniorapplication.utils.EventObserver
-import com.example.studentbeansandroidjuniorapplication.utils.LoginAction
-import com.example.studentbeansandroidjuniorapplication.utils.LoginAction.*
+import com.example.studentbeansandroidjuniorapplication.utils.StudentBeansAction.*
 import com.example.studentbeansandroidjuniorapplication.utils.navigate
 import com.example.studentbeansandroidjuniorapplication.utils.toast
-import timber.log.Timber
 
 class LoginFragment : Fragment() {
     private val loginVm: LoginViewModel by viewModels()

@@ -6,15 +6,14 @@ import androidx.lifecycle.ViewModel
 import com.example.studentbeansandroidjuniorapplication.domain.DomainUserLogin
 import com.example.studentbeansandroidjuniorapplication.domain.isCompleted
 import com.example.studentbeansandroidjuniorapplication.utils.Event
-import com.example.studentbeansandroidjuniorapplication.utils.LoginAction
-import com.example.studentbeansandroidjuniorapplication.utils.LoginAction.*
-import timber.log.Timber
+import com.example.studentbeansandroidjuniorapplication.utils.StudentBeansAction
+import com.example.studentbeansandroidjuniorapplication.utils.StudentBeansAction.*
 
 class LoginViewModel: ViewModel() {
 
-    private val _eventLoginNavigate = MutableLiveData<Event<LoginAction>>()
-    val eventLoginNavigate: LiveData<Event<LoginAction>> = _eventLoginNavigate
-    private fun onEventLoginNavigate(action: LoginAction) {
+    private val _eventLoginNavigate = MutableLiveData<Event<StudentBeansAction>>()
+    val eventLoginNavigate: LiveData<Event<StudentBeansAction>> = _eventLoginNavigate
+    private fun onEventLoginNavigate(action: StudentBeansAction) {
         _eventLoginNavigate.value = Event(action)
     }
 

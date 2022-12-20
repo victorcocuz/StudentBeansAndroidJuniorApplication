@@ -31,6 +31,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:studentBeansApiStatus="@{varPhotosVm.status}"
+            app:imageListSize="@{varPhotosVm.photos}"
             android:contentDescription="@string/f_photos_image_placeholder" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
