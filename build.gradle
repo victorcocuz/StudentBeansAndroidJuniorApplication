@@ -1,4 +1,34 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        // Main
+        version_core = '1.9.0'
+        version_appcompat = '1.5.1'
+        vasrion_material = '1.7.0'
+        version_constraintlayout = '2.1.4'
+
+        // Navigation
+        version_navigation = '2.5.3'
+
+        // Lifecycle
+        version_lifecycle = '2.5.1'
+
+        // Other
+        version_timber = '5.0.1'
+
+        // Test
+        version_junit = '4.13.2'
+        version_test_truth = '1.1.3'
+        version_test_junit = '1.1.4'
+        version_test_espresso = '3.5.0'
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
 plugins {
     id 'com.android.application' version '7.3.1' apply false
     id 'com.android.library' version '7.3.1' apply false
