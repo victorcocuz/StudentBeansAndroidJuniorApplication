@@ -23,14 +23,10 @@ class PhotosViewModel(
     init {
         viewModelScope.launch {
             _status.value = LOADING
-            if (studentBeansRepository.refreshPhotos().isEmpty()) {
-                Timber.e("error")
-                _status.value = ERROR
-            } else {
-                Timber.e("done")
-                _status.value = DONE
-            }
+            if (studentBeansRepository.refreshPhotos().isEmpty()) _status.value = ERROR
+            else _status.value = DONE
         }
     }
+
     val photos = studentBeansRepository.photos
 }

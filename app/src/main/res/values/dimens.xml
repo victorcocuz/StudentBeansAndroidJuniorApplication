@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Main-->
+    <dimen name="image_size">150dp</dimen>
     <dimen name="toolbar_height">56dp</dimen>
     <dimen name="btn_height">40dp</dimen>
 
@@ -21,6 +22,7 @@
     <dimen name="text_regular">14sp</dimen>
 
     <!-- Elevations -->
+    <dimen name="picture_elevation">0dp</dimen>
     <dimen name="toolbar_elevation">0dp</dimen>
     <dimen name="button_elevation">2dp</dimen>
 
@@ -28,6 +30,7 @@
     <dimen name="stroke_single">1dp</dimen>
     <dimen name="stroke_double">2dp</dimen>
     <dimen name="corner_radius">4dp</dimen>
+    <dimen name="corner_radius_card_view">8dp</dimen>
     <dimen name="border_offset">-3dp</dimen>
 
 </resources>

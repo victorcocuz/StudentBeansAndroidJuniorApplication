@@ -24,17 +24,14 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.apply {
             // Setup AppBar and navController
-            setSupportActionBar(lToolbarMain)
+            setSupportActionBar(toolbarMain)
             navController = (supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment).navController
-            NavigationUI.setupActionBarWithNavController(this@MainActivity, navController, mainDrawerLayout)
-            appBarConfiguration = AppBarConfiguration(navController.graph, mainDrawerLayout)
+            NavigationUI.setupActionBarWithNavController(this@MainActivity, navController)
+            appBarConfiguration = AppBarConfiguration(navController.graph)
 
             navController.addOnDestinationChangedListener { _: NavController, nd: NavDestination, _: Bundle? ->
                 when (nd.id) {
-                    R.id.LoginFragment -> {
-                        lToolbarMain.navigationIcon = null
-                        supportActionBar?.setDisplayShowTitleEnabled(false)
-                    }
+                    R.id.LoginFragment -> supportActionBar?.setDisplayShowTitleEnabled(false)
                     else -> supportActionBar?.setDisplayShowTitleEnabled(true)
                 }
             }

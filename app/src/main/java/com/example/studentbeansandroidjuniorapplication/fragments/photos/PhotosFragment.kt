@@ -31,6 +31,7 @@ class PhotosFragment : Fragment() {
         _binding?.apply {
             lifecycleOwner = viewLifecycleOwner
             varPhotosVm = this@PhotosFragment.photosVm
+            fPhotosRecyclerView.adapter = PhotoAdapter()
         }
         return binding.root
     }
