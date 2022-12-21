@@ -9,6 +9,7 @@ import com.example.studentbeansandroidjuniorapplication.domain.DomainPhoto
 import com.example.studentbeansandroidjuniorapplication.fragments.photos.PhotoAdapter
 import com.example.studentbeansandroidjuniorapplication.network.StudentBeansApiStatus
 import com.example.studentbeansandroidjuniorapplication.network.StudentBeansApiStatus.*
+import timber.log.Timber
 
 @BindingAdapter("studentBeansApiStatus", "imageListSize")
 fun bindStatus(imgView: ImageView, status: StudentBeansApiStatus?, photos: List<DomainPhoto>?) {
@@ -32,6 +33,7 @@ fun bindStatus(imgView: ImageView, status: StudentBeansApiStatus?, photos: List<
 
 @BindingAdapter("bindPhotosData")
 fun RecyclerView.bindPhotosData(photos: MutableList<DomainPhoto>?) = photos?.let {
+    Timber.e("list is submitted")
     val adapter = this.adapter as PhotoAdapter
     adapter.submitList(photos)
 }

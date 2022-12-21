@@ -11,6 +11,6 @@ interface StudentBeansDatabaseDao {
     @Query("SELECT * FROM DbPhoto")
     fun getPhotos(): LiveData<List<DbPhoto>>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertAll(vararg photos: DbPhoto)
 }

@@ -38,11 +38,11 @@ class PhotoAdapter : ListAdapter<DomainPhoto, PhotoAdapter.ViewHolder>(DiffCallB
 
     companion object DiffCallBack : DiffUtil.ItemCallback<DomainPhoto>() {
         override fun areItemsTheSame(oldItem: DomainPhoto, newItem: DomainPhoto): Boolean {
-            return oldItem == newItem
+            return oldItem === newItem
         }
 
         override fun areContentsTheSame(oldItem: DomainPhoto, newItem: DomainPhoto): Boolean {
-            return oldItem.id == newItem.id
+            return oldItem.albumId == newItem.albumId
         }
     }
 }
