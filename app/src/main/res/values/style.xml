@@ -47,7 +47,7 @@
 
     <style name="ButtonStandard" parent="TextStandard">
         <item name="android:textSize">@dimen/text_medium</item>
-        <item name="android:background">@color/blue</item>
+        <item name="android:background">@drawable/btn_narrow_ripple</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">@font/montserrat_regular</item>
         <item name="android:paddingStart">@dimen/padding_button</item>

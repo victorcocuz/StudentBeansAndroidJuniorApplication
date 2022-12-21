@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/design_default_color_primary">
+    android:color="@color/design_default_color_primary_dark">
     <item android:id="@android:id/background">
         <selector>
             <item android:state_selected="true">
                 <shape>
-                    <solid android:color="@color/design_default_color_primary" />
+                    <solid android:color="@color/design_default_color_primary_dark" />
                     <corners android:radius="@dimen/margin_xxxsmall" />
                     <stroke
                         android:width="@dimen/stroke_single"
@@ -15,11 +15,11 @@
 
             <item android:state_selected="false">
                 <shape>
-                    <solid android:color="@color/design_default_color_primary_dark" />
+                    <solid android:color="@color/blue" />
                     <corners android:radius="@dimen/margin_xxxsmall" />
                     <stroke
                         android:width="@dimen/stroke_single"
-                        android:color="@color/black" />
+                        android:color="@color/blue" />
                 </shape>
             </item>
         </selector>

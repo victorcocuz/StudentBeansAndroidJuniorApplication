@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.studentbeansandroidjuniorapplication.databinding.ItemPhotoViewBinding
 import com.example.studentbeansandroidjuniorapplication.domain.DomainPhoto
 import com.example.studentbeansandroidjuniorapplication.utils.bindImage
-import timber.log.Timber
 
 class PhotoAdapter : ListAdapter<DomainPhoto, PhotoAdapter.ViewHolder>(DiffCallBack) {
     val data = listOf<DomainPhoto>()

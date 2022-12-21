@@ -1,15 +1,12 @@
 package com.example.studentbeansandroidjuniorapplication.repository
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import com.example.studentbeansandroidjuniorapplication.database.StudentBeansDatabase
 import com.example.studentbeansandroidjuniorapplication.database.asDomainModel
 import com.example.studentbeansandroidjuniorapplication.domain.DomainPhoto
 import com.example.studentbeansandroidjuniorapplication.network.NetworkPhoto
 import com.example.studentbeansandroidjuniorapplication.network.StudentBeansApi
-import com.example.studentbeansandroidjuniorapplication.network.StudentBeansApiStatus
-import com.example.studentbeansandroidjuniorapplication.network.StudentBeansApiStatus.*
 import com.example.studentbeansandroidjuniorapplication.network.asDatabaseModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

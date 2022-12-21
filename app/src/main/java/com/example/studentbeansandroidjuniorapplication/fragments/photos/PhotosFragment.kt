@@ -1,19 +1,15 @@
 package com.example.studentbeansandroidjuniorapplication.fragments.photos
 
 import android.os.Bundle
-import android.provider.ContactsContract.Contacts.Photo
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.example.studentbeansandroidjuniorapplication.R
-import com.example.studentbeansandroidjuniorapplication.databinding.FragmentLoginBinding
 import com.example.studentbeansandroidjuniorapplication.databinding.FragmentPhotosBinding
 import com.example.studentbeansandroidjuniorapplication.utils.ViewModelFactory
-import timber.log.Timber
 
 class PhotosFragment : Fragment() {
     private lateinit var photosVm: PhotosViewModel

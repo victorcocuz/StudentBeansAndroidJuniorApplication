@@ -1,7 +1,6 @@
 package com.example.studentbeansandroidjuniorapplication.utils
 
 import android.os.Bundle
-import android.provider.ContactsContract.Contacts.Photo
 import androidx.lifecycle.AbstractSavedStateViewModelFactory
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel

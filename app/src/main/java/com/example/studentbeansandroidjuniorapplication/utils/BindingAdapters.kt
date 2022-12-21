@@ -1,20 +1,14 @@
 package com.example.studentbeansandroidjuniorapplication.utils
 
-import android.provider.ContactsContract.Contacts.Photo
-import android.view.View
 import android.view.View.*
 import android.widget.ImageView
-import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
 import com.example.studentbeansandroidjuniorapplication.R
 import com.example.studentbeansandroidjuniorapplication.domain.DomainPhoto
 import com.example.studentbeansandroidjuniorapplication.fragments.photos.PhotoAdapter
 import com.example.studentbeansandroidjuniorapplication.network.StudentBeansApiStatus
 import com.example.studentbeansandroidjuniorapplication.network.StudentBeansApiStatus.*
-import timber.log.Timber
 
 @BindingAdapter("studentBeansApiStatus", "imageListSize")
 fun bindStatus(imgView: ImageView, status: StudentBeansApiStatus?, photos: List<DomainPhoto>?) {

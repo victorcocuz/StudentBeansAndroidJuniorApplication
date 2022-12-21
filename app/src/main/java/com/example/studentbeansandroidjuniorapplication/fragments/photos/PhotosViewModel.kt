@@ -9,7 +9,6 @@ import com.example.studentbeansandroidjuniorapplication.network.StudentBeansApiS
 import com.example.studentbeansandroidjuniorapplication.network.StudentBeansApiStatus.*
 import com.example.studentbeansandroidjuniorapplication.repository.StudentBeansRepository
 import kotlinx.coroutines.launch
-import timber.log.Timber
 
 class PhotosViewModel(
     app: Application,

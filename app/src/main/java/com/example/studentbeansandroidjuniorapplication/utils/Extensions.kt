@@ -4,9 +4,7 @@ import android.content.Context
 import android.graphics.Rect
 import android.view.MotionEvent
 import android.view.View
-import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
-import android.webkit.URLUtil
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
@@ -14,11 +12,8 @@ import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
 import com.example.studentbeansandroidjuniorapplication.R
 import com.squareup.picasso.Picasso
-import timber.log.Timber
 
 // Fragment
 fun Fragment.navigate(directions: NavDirections) = findNavController().navigate(directions)
