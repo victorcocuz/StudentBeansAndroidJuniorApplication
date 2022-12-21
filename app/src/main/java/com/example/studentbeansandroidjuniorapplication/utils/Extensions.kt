@@ -6,6 +6,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
+import android.webkit.URLUtil
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
@@ -16,6 +17,8 @@ import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.studentbeansandroidjuniorapplication.R
+import com.squareup.picasso.Picasso
+import timber.log.Timber
 
 // Fragment
 fun Fragment.navigate(directions: NavDirections) = findNavController().navigate(directions)
@@ -36,19 +39,12 @@ fun View.removeFocusAndHideKeyboard(context: Context, event: MotionEvent) {
     }
 }
 
-fun ImageView.bindImage(imgUrl: String?) {
-    imgUrl?.let {
-        val url = "https://via.placeholder.com/150/e33ffb"
-        val imgUri = it.toUri().buildUpon().scheme("https").build()
-        Glide.with(context)
-            .load(url)
-            .override(150, 150)
-            .fitCenter()
-            .apply(
-                RequestOptions()
-                    .placeholder(R.drawable.loading_animation)
-                    .error(R.drawable.ic_broken_image)
-            )
-            .into(this)
-    }
+fun ImageView.bindImage(imgUrl: String?) = imgUrl?.let {
+    val imgUri = imgUrl.toUri().buildUpon().scheme("https").build()
+    Picasso
+        .get()
+        .load(imgUri)
+        .placeholder(R.drawable.loading_animation)
+        .error(R.drawable.ic_broken_image)
+        .into(this)
 }

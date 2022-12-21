@@ -10,6 +10,7 @@
     <dimen name="margin_xxsmall">8dp</dimen>
     <dimen name="margin_xsmall">12dp</dimen>
     <dimen name="margin_small">16dp</dimen>
+    <dimen name="margin_medium">24dp</dimen>
 
     <!-- Paddings-->
     <dimen name="padding_button_small">4dp</dimen>
@@ -19,7 +20,9 @@
     <dimen name="padding_medium">16dp</dimen>
 
     <!-- Text-->
+    <dimen name="text_medium">16sp</dimen>
     <dimen name="text_regular">14sp</dimen>
+    <dimen name="text_large">24sp</dimen>
 
     <!-- Elevations -->
     <dimen name="picture_elevation">0dp</dimen>
@@ -29,6 +32,7 @@
     <!-- Other-->
     <dimen name="stroke_single">1dp</dimen>
     <dimen name="stroke_double">2dp</dimen>
+    <dimen name="stroke_width">0dp</dimen>
     <dimen name="corner_radius">4dp</dimen>
     <dimen name="corner_radius_card_view">8dp</dimen>
     <dimen name="border_offset">-3dp</dimen>

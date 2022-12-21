@@ -20,6 +20,8 @@ class PhotosViewModel(
     val status: LiveData<StudentBeansApiStatus>
         get() = _status
 
+    val photos = studentBeansRepository.photos
+
     init {
         viewModelScope.launch {
             _status.value = LOADING
@@ -27,6 +29,4 @@ class PhotosViewModel(
             else _status.value = DONE
         }
     }
-
-    val photos = studentBeansRepository.photos
 }

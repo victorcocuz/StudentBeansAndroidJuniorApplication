@@ -7,6 +7,7 @@
         android:layout_margin="@dimen/margin_xxxsmall"
         android:layout_width="match_parent"
         android:layout_height="@dimen/image_size"
+        card_view:cardElevation="@dimen/picture_elevation"
         card_view:cardBackgroundColor="@color/white"
         card_view:cardCornerRadius="@dimen/corner_radius_card_view">
 
@@ -18,7 +19,7 @@
                 android:id="@+id/i_photo_view_cw_image"
                 android:layout_width="@dimen/image_size"
                 android:layout_height="@dimen/image_size"
-                android:elevation="@dimen/picture_elevation"
+                card_view:cardElevation="@dimen/picture_elevation"
                 card_view:cardCornerRadius="@dimen/corner_radius_card_view"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 card_view:layout_constraintStart_toStartOf="parent"

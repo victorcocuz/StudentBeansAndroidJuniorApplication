@@ -31,9 +31,13 @@ class MainActivity : AppCompatActivity() {
 
             navController.addOnDestinationChangedListener { _: NavController, nd: NavDestination, _: Bundle? ->
                 when (nd.id) {
-                    R.id.LoginFragment -> supportActionBar?.setDisplayShowTitleEnabled(false)
-                    else -> supportActionBar?.setDisplayShowTitleEnabled(true)
+                    R.id.PhotosFragment -> {
+                        supportActionBar?.setDisplayShowTitleEnabled(true)
+                        toolbarTitle.text = toolbarMain.title
+                    }
+                    else -> toolbarTitle.text = ""
                 }
+                supportActionBar?.setDisplayShowTitleEnabled(false)
             }
         }
     }

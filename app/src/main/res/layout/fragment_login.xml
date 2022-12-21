@@ -14,20 +14,47 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/tv_header"
+            style="@style/TextHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="@string/f_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_sub_header"
+            style="@style/TextSubHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/f_login_tv_subtitle"
+            app:layout_constraintStart_toStartOf="@+id/tv_header"
+            app:layout_constraintTop_toBottomOf="@+id/tv_header" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/f_login_et_email_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_xxsmall"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/light_grey"
             android:nextFocusForward="@id/f_login_et_password_layout"
+            android:translationY="@dimen/margin_medium"
+            app:boxStrokeWidth="@dimen/stroke_width"
+            app:boxStrokeWidthFocused="@dimen/stroke_width"
+            app:hintTextColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_header">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/f_login_et_email"
+                style="@style/EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/f_login_email_hint"
@@ -39,8 +66,13 @@
             android:id="@+id/f_login_et_password_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_xxsmall"
-            android:layout_marginBottom="@dimen/margin_xxsmall"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:background="@color/light_grey"
+            android:textColorHint="@color/black"
+            android:translationY="30dp"
+            app:boxStrokeWidth="@dimen/stroke_width"
+            app:boxStrokeWidthFocused="@dimen/stroke_width"
+            app:hintTextColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/f_login_et_email_layout"
@@ -48,6 +80,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/f_login_et_password"
+                style="@style/EditText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/f_login_email_password_hint"
@@ -59,12 +92,16 @@
         <TextView
             android:id="@+id/f_login_btn_login"
             style="@style/ButtonStandard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
             android:onClick="@{() -> varLoginVm.validateLogin()}"
             android:text="@string/f_login_login_btn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/f_login_et_password_layout" />
+            app:layout_constraintTop_toBottomOf="@+id/f_login_et_password_layout"
+            app:layout_constraintVertical_bias="0.341" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

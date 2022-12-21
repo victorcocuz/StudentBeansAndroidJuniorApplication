@@ -65,7 +65,11 @@ dependencies {
     implementation "com.squareup.moshi:moshi-kotlin:$version_moshi"
     implementation "com.squareup.retrofit2:converter-moshi:$version_retrofit"
     implementation "com.github.bumptech.glide:glide:$version_glide"
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
     annotationProcessor "com.github.bumptech.glide:compiler:$version_glide"
+    implementation "com.squareup.picasso:picasso:2.8"
+
 
     // Room
     implementation "androidx.room:room-runtime:$version_room"
@@ -78,6 +82,10 @@ dependencies {
 
     // Test
     testImplementation "junit:junit:$version_junit"
-    androidTestImplementation "androidx.test.ext:junit:$version_test_junit"
-    androidTestImplementation "androidx.test.espresso:espresso-core:$version_test_espresso"
+    testImplementation "com.google.truth:truth:$version_test_truth"
+    testImplementation "androidx.test.ext:junit:$version_test_junit"
+    testImplementation "androidx.test.ext:junit-ktx:$version_test_x_junit"
+    testImplementation "androidx.test:core-ktx:$version_test_x_core"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    androidTestImplementation "androidx.test.ext:junit:$version_test_x_junit"
 }
